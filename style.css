@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  background-color: white;
+
+  margin: 0;
+}
+
+.wrapper {
+  height: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+
+}
+
+h1 {
+
+  margin: 0 0;
+  padding-bottom: .25em;
+  background-color: green;
+  color: white;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 5em;
+  box-shadow: 2px 5px 5px #888888;
+}
+
+.powder-green {
+  background-color: #c1ffc8;
+  border-radius: 0px 0px 15px 15px;
+  box-shadow: 2px 5px 5px #888888;
+}
+
+.quote-creation {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  text-align: center;
+  padding-top: 1em;
+
+}
+
+.quote-creation input {
+  display: flex;
+  width: 100%;
+  padding: .75em;
+  margin: 1em 0;
+  font-size: 1.25em;
+}
+
+.add-quote {
+  display: flex;
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  font-size: 5em;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: .25em auto;
+  color: white;
+  background-color: green;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.add-quote:hover {
+  background-color: white;
+  color:green;
+  border: 1px solid green;
+}
+
+.add-quote div {
+  margin-top: -10px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.search-text {
+  font-family: 'Droid Serif', serif;
+  font-size: 2em;
+}
+.search input{
+  padding: .75em;
+  margin-left: 1em;
+  font-size: 1.25em;
+  height: 1em;
+}
+
+.quote-tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.quote-p {
+padding-left: 1em;
+ box-shadow: 2px 5px 5px #888888;
+  border-radius: 0px 5px 15px 15px;
+  padding-bottom: 1em;
+}
+
+.quote-p .text {
+  font-family: 'Slabo 27px', serif;
+  font-size: 1.5em;
+}
+
+.quote-p .author {
+    font-family: 'Droid Serif', serif;
+}
+
+
+.delete-button {
+  justify-content: flex-end;
+  border-radius: 50%;
+  height: 2em;
+  width: 2em;
+  margin-left: 1em;
+  background-color: #c1ffc8;
+  font-style: bold;
+  font-size: 1em;
+  color: white;
+  background-color: green;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  color:red;
+}
+
+@media screen and (max-width: 320px) {
+  .wrapper {
+
+    width: 100%;
+  }
+  h1{font-size: 100%;}
+}
